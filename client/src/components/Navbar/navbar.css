@@ -8,3 +8,11 @@
   align-items: center;
   font-family: 'Andika', sans-serif;
 }
+
+.topLeft, 
+.topRight{
+  flex: 3;
+}
+.topCenter{
+  flex: 6;
+}

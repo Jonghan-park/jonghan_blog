@@ -18,7 +18,11 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="topRight">
-        <img className="topImg" src="" alt="" />
+        <img
+          className="topImg"
+          src="../assets/bio-photo.jpg"
+          alt="Profile pic"
+        />
         <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
       </div>
     </div>

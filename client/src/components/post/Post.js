@@ -1,6 +1,6 @@
 import React from "react";
 import "./post.css";
-import reactLogo from "../assets/react-logo.png";
+import reactLogo from "../../assets/react-logo.png";
 
 const post = () => {
   return (

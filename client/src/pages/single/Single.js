@@ -1,8 +1,13 @@
 import React from "react";
+import Sidebar from "../../components/sidebar/Sidebar";
 import "./single.css";
 
 const Single = () => {
-  return <div>Single</div>;
+  return (
+    <div className="single">
+      <Sidebar />
+    </div>
+  );
 };
 
 export default Single;

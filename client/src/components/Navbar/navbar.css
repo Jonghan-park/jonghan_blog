@@ -69,3 +69,7 @@
   cursor: pointer;
   margin-left: 15px;
 }
+.topListItem > a{
+  text-decoration: none;
+  color: rgb(2, 89, 165);
+}

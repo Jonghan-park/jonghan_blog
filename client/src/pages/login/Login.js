@@ -20,7 +20,7 @@ const Login = () => {
         />
         <button className="loginButton">Login</button>
       </form>
-      <button className="loginRegisterButton">Register</button>
+      {/* <button className="loginRegisterButton">Register</button> */}
     </div>
   );
 };

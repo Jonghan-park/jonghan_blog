@@ -8,7 +8,9 @@ const Navbar = () => {
   return (
     <div className="top">
       <div className="topLeft">
-        <img className="topLogo" src={logo} alt="Logo" />
+        <Link to="/">
+          <img className="topLogo" src={logo} alt="Logo" />
+        </Link>
       </div>
       <div className="topCenter">
         <ul className="topList">
@@ -24,13 +26,11 @@ const Navbar = () => {
           <li className="topListItem">
             <Link to="/write">WRITE</Link>
           </li>
-          <li className="topListItem">
-            <Link to="#">LOGOUT</Link>
-          </li>
         </ul>
       </div>
       <div className="topRight">
         <img className="topImg" src={profileImg} alt="Profile pic" />
+
         <i className="topIcon fa-brands fa-linkedin"></i>
 
         <i className="topIcon fa-brands fa-github"></i>

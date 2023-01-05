@@ -17,10 +17,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/single" element={<Single />} />
-          <Route path="/write" element={user ? <Write /> : <Register />} />
-          <Route path="/setting" element={user ? <Setting /> : <Register />} />
+          <Route path="/write" element={user ? <Write /> : <Login />} />
+          <Route path="/setting" element={user ? <Setting /> : <Login />} />
           <Route path="/login" element={user ? <Home /> : <Login />} />
-          <Route path="/register" element={user ? <Home /> : <Register />} />
+          {/* <Route path="/register" element={user ? <Home /> : <Login />} /> */}
         </Routes>
       </Router>
     </div>

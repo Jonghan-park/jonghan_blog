@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Setting from "./pages/settings/Setting";
+import Login from "./pages/login/Login";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <Home /> */}
       {/* <Single /> */}
       {/* <Write /> */}
-      <Setting />
+      {/* <Setting /> */}
+      <Login />
     </div>
   );
 }

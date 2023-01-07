@@ -13,7 +13,6 @@ const post = () => {
         </div>
         <span className="postTitle">What is React?</span>
         <hr />
-        <span className="postDate">1 hour ago</span>
       </div>
       <p className="postDesc">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam odio

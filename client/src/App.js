@@ -9,7 +9,7 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 
 function App() {
-  const user = false;
+  const user = true;
   return (
     <div className="App">
       <Router>

@@ -19,7 +19,6 @@ const SinglePst = () => {
           <span className="singlePostAuthor">
             Author: <b>Jonghan</b>
           </span>
-          <span className="singlePostDate">1 hour ago</span>
         </div>
         {/* <ReactMarkdown>## Hello</ReactMarkdown> */}
         <p className="singlePostDesc">

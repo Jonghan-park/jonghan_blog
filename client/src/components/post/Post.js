@@ -1,30 +1,32 @@
 import React from "react";
 import "./post.css";
-import reactLogo from "../../assets/react-logo.png";
 
-const post = () => {
+const post = ({ post }) => {
+  const idHandler = (id) => {};
   return (
     <div className="post">
-      <img className="postImg" src={reactLogo} alt="React Logo" />
+      <img
+        className="postImg"
+        onClick={() => idHandler(post.id)}
+        style={{ cursor: "pointer" }}
+        src={post.img}
+        alt="React Logo"
+      />
       <div className="postInfo">
         <div className="postCats">
-          <span className="postCat">React</span>
-          <span className="postCat">What I learned</span>
+          <span className="postCat">{post.category}</span>
         </div>
-        <span className="postTitle">What is React?</span>
+        <span className="postTitle" onClick={() => idHandler(post.id)}>
+          {post.title}
+        </span>
         <hr />
       </div>
-      <p className="postDesc">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam odio
-        molestias eveniet, saepe illum illo error culpa repudiandae magni
-        ratione quos vel iste amet doloremque ab cupiditate beatae expedita
-        rerum? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Quisquam odio molestias eveniet, saepe illum illo error culpa
-        repudiandae magni ratione quos vel iste amet doloremque ab cupiditate
-        beatae expedita rerum? Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Quisquam odio molestias eveniet, saepe illum illo
-        error culpa repudiandae magni ratione quos vel iste amet doloremque ab
-        cupiditate beatae expedita rerum?
+      <p
+        className="postDesc"
+        onClick={() => idHandler(post.id)}
+        style={{ cursor: "pointer" }}
+      >
+        {post.desc}
       </p>
     </div>
   );

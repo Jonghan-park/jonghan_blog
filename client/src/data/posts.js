@@ -6,16 +6,9 @@ const posts = [
     title: "What is react?",
     category: "React",
     img: blogImg1,
-    desc: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam odio
-    molestias eveniet, saepe illum illo error culpa repudiandae magni
-    ratione quos vel iste amet doloremque ab cupiditate beatae expedita
-    rerum? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    Quisquam odio molestias eveniet, saepe illum illo error culpa
-    repudiandae magni ratione quos vel iste amet doloremque ab cupiditate
-    beatae expedita rerum? Lorem ipsum dolor sit, amet consectetur
-    adipisicing elit. Quisquam odio molestias eveniet, saepe illum illo
-    error culpa repudiandae magni ratione quos vel iste amet doloremque ab
-    cupiditate beatae expedita rerum?`,
+    desc: ` React is a JavaScript library for building user interfaces. React
+    makes building complex, interactive and reactive user interfaces
+    simpler. React is all about components`,
   },
 ];
 

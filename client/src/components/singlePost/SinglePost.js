@@ -22,13 +22,9 @@ const SinglePst = () => {
         </div>
         {/* <ReactMarkdown>## Hello</ReactMarkdown> */}
         <p className="singlePostDesc">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
-          maiores recusandae! Aut ipsam, quae expedita facere nihil voluptate
-          molestiae maiores incidunt quam omnis minus, ut voluptates officiis
-          mollitia, autem blanditiis. Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Repellendus, maiores recusandae! Aut ipsam, quae
-          expedita facere nihil voluptate molestiae maiores incidunt quam omnis
-          minus, ut voluptates officiis mollitia, autem blanditiis.
+          React is a JavaScript library for building user interfaces. React
+          makes building complex, interactive and reactive user interfaces
+          simpler. React is all about components
         </p>
       </div>
     </div>

@@ -3,6 +3,13 @@ import "./sidebar.css";
 import profileImg from "../../assets/me.png";
 
 const Sidebar = () => {
+  const linkHandler = (type) => {
+    if (type === "linkedIn") {
+      window.open("https://www.linkedin.com/in/jonghan-park/");
+    } else if (type === "github") {
+      window.open("https://github.com/Jonghan-park");
+    }
+  };
   return (
     <div className="sidebar">
       <div className="sidebarItem">
@@ -28,8 +35,14 @@ const Sidebar = () => {
       <div className="sidebarItem">
         <span className="sidebarTitle">Social media</span>
         <div className="sidebarSocial">
-          <i className="sidebarIcon fa-brands fa-linkedin"></i>
-          <i className="sidebarIcon fa-brands fa-github"></i>
+          <i
+            className="sidebarIcon fa-brands fa-linkedin"
+            onClick={() => linkHandler("linkedIn")}
+          ></i>
+          <i
+            className="sidebarIcon fa-brands fa-github"
+            onClick={() => linkHandler("github")}
+          ></i>
         </div>
       </div>
     </div>

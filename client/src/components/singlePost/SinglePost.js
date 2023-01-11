@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import "./singlePost.css";
 import reactLogo from "../../assets/react-logo.png";
+import { useParams } from "react-router-dom";
+import postsData from "../../data/posts";
 
 const SinglePst = () => {
+  const [post, setPost] = useState("");
+  const { id } = useParams();
+
+  const findPostById = () => {
+    const findingPost = postsData.find((post) => post.id === parseInt(id));
+    setPost(findingPost);
+  };
+
+  useEffect(() => {
+    findPostById();
+  }, []);
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
-        <img src={reactLogo} alt="React Logo" className="singlePostImg" />
+        <img src={post.img} alt="React Logo" className="singlePostImg" />
         <h1 className="singlePostTitle">
-          What Is React?
+          {post.title}
           <div className="singlePostEdit">
             <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
             <i className="singlePostIcon fa-sharp fa-solid fa-trash"></i>
@@ -21,11 +34,7 @@ const SinglePst = () => {
           </span>
         </div>
         {/* <ReactMarkdown>## Hello</ReactMarkdown> */}
-        <p className="singlePostDesc">
-          React is a JavaScript library for building user interfaces. React
-          makes building complex, interactive and reactive user interfaces
-          simpler. React is all about components
-        </p>
+        <p className="singlePostDesc">{post.desc}</p>
       </div>
     </div>
   );
